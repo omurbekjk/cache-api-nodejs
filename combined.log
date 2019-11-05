@@ -52,3 +52,26 @@
 {"message":"Cache hit!","level":"info"}
 {"message":"Successfully connected to mongodb!","level":"info"}
 {"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Cache miss!","level":"info"}
+{"message":"Cache miss!","level":"info"}
+{"message":"Cache hit!","level":"info"}
+{"message":"Cache miss!","level":"info"}
+{"message":"Cache miss!","level":"info"}
+{"message":"Cache miss!","level":"info"}
+{"message":"Cache hit!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Cache hit!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Cache hit!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Cache miss!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Cache hit!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Cache hit!","level":"info"}
+{"message":"Cache miss!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Cache miss!","level":"info"}
+{"message":"Cache hit!","level":"info"}

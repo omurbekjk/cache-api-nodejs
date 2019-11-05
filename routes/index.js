@@ -7,6 +7,7 @@ const crypto = require("crypto");
 const CACHE_MISS = 'Cache miss!';
 const CACHE_HIT = 'Cache hit!';
 const NOT_FOUND = 'Not found!';
+const SUCCESSFULLY_DELETED = 'Successfully deleted';
 
 /**
  * @param len
@@ -31,7 +32,14 @@ router.get('/', async (req, res) => {
  *
  */
 router.delete('/', async (req, res) => {
-    res.send({title: 'delete all', createdAt: new Date()}).status(200);
+    try {
+       await Dummy.remove({}); // we will wait until removal of all docs are finished
+    }catch (e) {
+        logger.error(e);
+      return res.send({message: e }).status(500);
+
+    }
+    res.send({message: SUCCESSFULLY_DELETED }).status(200);
 });
 
 /**
@@ -39,7 +47,7 @@ router.delete('/', async (req, res) => {
  */
 router.get('/:key', async (req, res) => {
     const key = req.params.key;
-    let data = await Dummy.findOne({key});
+    let data = await Dummy.findOneAndUpdate({key}, {$set: {createdAt: new Date()}}, {new: true});
     if (!data) {
         const randomStr = getRandomString();
         const newDummy = new Dummy({
@@ -70,14 +78,17 @@ router.delete('/:key', async (req, res) => {
  */
 router.put('/:key', async (req, res) => {
     const key = req.params.key;
-    const data = {
-        id: req.params.key,
-        text: 'hello',
-    };
-    const foundDummy = Dummy.findOne({key});
-    const dummy = new Dummy(data);
-    await dummy.save();
-    res.send({title: 'update entity', key: req.params.key, body: req.body, createdAt: new Date()}).status(200);
+    let foundDummy = await Dummy.findOneAndUpdate({key}, {$set:{ ...req.body, createdAt: new Date()}}, {new: true});
+    if (!foundDummy) {
+        const newDummy = new Dummy({
+            key
+        });
+        logger.info(CACHE_MISS);
+        const data = await newDummy.save();
+        return res.send(data).status(200);
+    }
+    logger.info(CACHE_HIT);
+    res.send(foundDummy).status(200);
 });
 
 module.exports = router;

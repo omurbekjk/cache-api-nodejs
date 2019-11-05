@@ -8,6 +8,7 @@ const Dummy = new Schema({
     createdAt: {
         type: Date,
         default: Date.now,
+        expires: 60,
     },
 });
 
