@@ -1,0 +1,54 @@
+{"name":"MongoNetworkError","errorLabels":["TransientTransactionError"],"level":"info","service":"user-service"}
+{"message":"Successfully connected to mongodb!","level":"info","service":"user-service"}
+{"name":"MongoNetworkError","errorLabels":["TransientTransactionError"],"level":"info","service":"user-service"}
+{"message":"Successfully connected to mongodb!","level":"info","service":"user-service"}
+{"message":"Successfully connected to mongodb!","level":"info","service":"cache-api"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Cache hit!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Cache hit!","level":"info"}
+{"message":"Cache hit!","level":"info"}
+{"message":"Cache hit!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Cache hit!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Cache miss!","level":"info"}
+{"message":"Cache miss!","level":"info"}
+{"message":"Cache hit!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
+{"message":"Successfully connected to mongodb!","level":"info"}
